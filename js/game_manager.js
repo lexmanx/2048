@@ -176,7 +176,7 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 1028 tile - stop game at 1028
-          if (merged.value ===128) self.won = true;
+          if (merged.value ===1024) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
